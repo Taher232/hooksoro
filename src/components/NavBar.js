@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+
 function Nav() {
     return(
     <nav>
@@ -7,4 +7,4 @@ function Nav() {
 <h3>Description</h3>
         </nav>);
 }
-export default Nav;
+export default Nav; 
