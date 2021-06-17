@@ -3,10 +3,11 @@ import { moviesData } from './moviesData';
 import SearchMovie from './components/SearchMovie/SearchMovie';
 import MoviesList from './components/MoviesList';
 import AddMovie from './components/AddMovie/AddMovie';
+import{Route} from 'react-router-dom';
 
 import './App.css';
 
-function App() {
+export default function App(){
   const [moviesList, setMoviesList] = useState(moviesData);
   const [nameSearch, setNameSearch] = useState('');
   const [ratingSearch, setRatingSearch] = useState(1);
@@ -17,25 +18,33 @@ function App() {
   };
 
   return (
+    
     <div className="App">
-      <SearchMovie
+      <Route 
+    path="/SearchMovie"
         setNameSearch={setNameSearch}
         ratingSearch={ratingSearch}
         setRatingSearch={setRatingSearch}
       />
-      <MoviesList
-        moviesList={moviesList}
+    <MoviesList
+    moviesList={moviesList}
         nameSearch={nameSearch}
         ratingSearch={ratingSearch}
-      />
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
-        <AddMovie addNewMovie={addNewMovie} />
+        
+    />
+
+
+    <Route path="/AddMovie" component={AddMovie}
+    addNewMovie={addNewMovie}
+    
+    />
+    
+      
       </div>
-    </div>
+
+      
+   
   );
 }
-
-export default App;
-
 
 

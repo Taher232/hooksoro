@@ -39,6 +39,7 @@
   },
   "devDependencies": {
     "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
+    "eslint-plugin-react": "^7.4.0",
     "react-refresh": "^0.10.0"
   }
 }

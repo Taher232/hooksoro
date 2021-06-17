@@ -50,9 +50,9 @@ export const moviesData = [
       rating:5,
     name: 'The Grey',
     year: '2006',
-    type: 'Comedy | Drama',
+    type: 'Aventure',
     description:
-      'A family determined to get their young daughter into the finals of a beauty pageant take a cross-country trip in their VW bus.',
+      'Following a grueling five-week shift at an Alaskan oil refinery, workers led by sharpshooter John Ottway (Liam Neeson) are flying home for a much-needed vacation. A brutal storm causes their plane to crash in the frozen wilderness, and only eight men (Frank Grillo, Dermot Mulroney), including Ottway, survive..',
   },
   {
     id: Math.random(),
@@ -63,7 +63,7 @@ export const moviesData = [
     year: '2003',
     type: 'Action',
     description:
-      "The lead character, called 'The Bride,' was a member of the Deadly Viper Assassination Squad, led by her lover 'Bill.'The Bride' decided to escape her life as a killer.",
+      "Valkyrie is a meticulous thriller based on a large-scale conspiracy within the German army to assassinate Hitler, leading to a failed bombing attempt on July 20, 1944.",
     details: 'https://www.imdb.com/title/tt0266697/plotsummary?ref_=tt_stry_pl',
   },
  
